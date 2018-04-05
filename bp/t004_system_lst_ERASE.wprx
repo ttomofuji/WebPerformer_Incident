@@ -1,0 +1,28 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <bp>
+    <tool-version>2.1.1.0</tool-version>
+    <code>t004_system_lst_ERASE</code>
+    <name>t004_system_lst</name>
+    <is-commit>false</is-commit>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2018-04-02 23:07:45.185</create-time>
+    <updator>eclipse</updator>
+    <update-time>2018-04-02 23:07:45.185</update-time>
+    <bp-logic-list>
+      <bp-logic>
+        <bp-code>t004_system_lst_ERASE</bp-code>
+        <id>10</id>
+        <order>10</order>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>t004_system_lst</dm-code>
+        <func-code>ERASE</func-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-02 23:07:45.185</create-time>
+        <updator>eclipse</updator>
+        <update-time>2018-04-02 23:07:45.185</update-time>
+      </bp-logic>
+    </bp-logic-list>
+  </bp>

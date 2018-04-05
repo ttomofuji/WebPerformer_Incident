@@ -1,0 +1,70 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <app>
+    <tool-version>2.1.1.0</tool-version>
+    <code>APP_STATUS_SCREEN</code>
+    <name>STATUS SCREEN</name>
+    <type>web</type>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2018-04-02 22:06:50.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2018-04-04 13:29:03.0</update-time>
+    <app-io-list>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>IO_SCREEN_OPEN_LIST</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-02 22:06:56.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>t001_incident</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-02 23:26:08.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>t001_incident_DETAIL</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-02 23:26:08.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>IO002_INCIDENT_LST</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-04 13:07:08.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>M001_SYSTEM_LST</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-04 13:07:08.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>M002_SYSTEM_DTL</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-04 13:07:08.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>t001_incident_EXP</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-04 13:29:03.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>t001_incident_IMP</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-04 13:29:03.0</create-time>
+      </app-io>
+    </app-io-list>
+  </app>

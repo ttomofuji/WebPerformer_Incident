@@ -1,0 +1,65 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <msg-list>
+    <msg>
+      <tool-version>2.1.1.0</tool-version>
+      <code>MSG_ERR_t001_incident</code>
+      <type>ERROR</type>
+      <message>エラー：{1}</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2018-03-29 18:38:48.0</create-time>
+      <updator>eclipse</updator>
+      <update-time>2018-03-29 18:38:48.0</update-time>
+    </msg>
+    <msg>
+      <tool-version>2.1.1.0</tool-version>
+      <code>MSG_PRE_t001_incident</code>
+      <type>INFO</type>
+      <message>データを全て消去します。よろしいですか？</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2018-03-29 18:38:48.0</create-time>
+      <updator>eclipse</updator>
+      <update-time>2018-03-29 18:38:48.0</update-time>
+    </msg>
+    <msg>
+      <tool-version>2.1.1.0</tool-version>
+      <code>MSG_ERR_t004_system_lst</code>
+      <type>ERROR</type>
+      <message>エラー：{1}</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2018-03-29 18:39:05.0</create-time>
+      <updator>eclipse</updator>
+      <update-time>2018-03-29 18:39:05.0</update-time>
+    </msg>
+    <msg>
+      <tool-version>2.1.1.0</tool-version>
+      <code>MSG_PRE_t004_system_lst</code>
+      <type>INFO</type>
+      <message>データを全て消去します。よろしいですか？</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2018-03-29 18:39:05.0</create-time>
+      <updator>eclipse</updator>
+      <update-time>2018-03-29 18:39:05.0</update-time>
+    </msg>
+    <msg>
+      <tool-version>2.1.1.0</tool-version>
+      <code>INFO_001</code>
+      <type>INFO</type>
+      <message>登録しますか？</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2018-03-30 16:44:54.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.1.1.0</tool-version>
+      <code>INFO_002</code>
+      <type>INFO</type>
+      <message>登録しました</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2018-03-30 16:44:54.0</create-time>
+    </msg>
+  </msg-list>

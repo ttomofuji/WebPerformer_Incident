@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="Windows-31J"?>
+<project name="cui" default="build" basedir=".">
+
+	<import file="${basedir}/wp-build_properties.xml" />
+
+	<!-- 生成対象プロジェクトのディレクトリ（必須） -->
+	<property name="target.project" value="${basedir}"/>
+
+	<!-- 生成対象アプリケーション（必須） -->
+	<property name="target.app.code" value=""/>
+
+	<!-- テーマ（必須）-->
+	<!-- 次の組み込みテーマ、またはプロジェクト内のカスタムテーマ
+		Luna|Ash-Luna|Grass|Ash-Grass|Azure|Sky|Orange|Lavender|Space|Forest|Mono|Cloud|Moca|Aqua|Mos|
+		S-Sky|S-Orange|S-Lavender|S-Space|S-Forest|S-Mono|S-Cloud|S-Moca|S-Aqua|S-Mos|
+		Standard5|S-ShadedLake5|S-ShadedSnow5|S-ShadedLeaf5|Lake5|Snow5|Leaf5|Sand5|Mist5|ShadedLake5|ShadedSnow5|ShadedLeaf5|
+		Standard|S-ShadedLake|S-ShadedSnow|S-ShadedLeaf|Lake|Snow|Leaf|Sand|Mist|ShadedLake|ShadedSnow|ShadedLeaf
+	-->
+	<property name="target.theme" value="Standard"/>
+
+	<!-- クリーンビルドをする [true|false] -->
+	<property name="tool.option.clean" value="true"/>
+
+	<!-- 例外のスタックトレースを表示する [true|false] -->
+	<property name="tool.option.showStackTrace" value="false"/>
+
+	<!-- テストモードで生成する [true|false] -->
+	<property name="tool.option.testmode" value="false"/>
+
+	<!-- アプリケーション環境 -->
+	<property name="target.app.context" value=""/>
+
+	<!-- アプリケーション生成後にドキュメントを生成する [true|false] -->
+	<property name="tool.option.appdocgen" value="false"/>
+
+	<!-- 生成に与えるメモリ -->
+	<property name="build.maxmemory" value="512m"/>
+
+	<!-- 生成に与えるメモリ（スタック） -->
+	<property name="build.stacksize" value="512k"/>
+
+	<!-- ドキュメントテーマ -->
+	<!-- 次の組み込みドキュメントテーマ
+		Honoka|S-Honoka
+	-->
+	<property name="target.doc.theme" value=""/>
+
+	<!-- ドキュメント出力先 -->
+	<property name="target.doc.dir" value=""/>
+
+	<!-- ドキュメント設定 -->
+	<property name="target.doc.settings" value=""/>
+
+	<!-- 画面HTMLをフレームに出力する -->
+	<!-- HTML4テーマを使用する場合、"true"を設定してください -->
+	<property name="target.doc.htmlview.frame" value="false"/>
+
+	<target name="build">
+		<ant antfile="${tool.home}/cui/build.xml">
+			<property name="target.app.code" value="${target.app.code}"/>
+		</ant>
+	</target>
+
+	<!-- ドキュメント生成 -->
+	<target name="build_doc_io">
+		<ant antfile="${tool.home}/cui/build.xml" target="build_doc_io">
+			<property name="target.app.code" value="${target.app.code}"/>
+		</ant>
+	</target>
+
+	<!-- WSプロキシライブラリとWSマッピングファイルを生成 -->
+	<target name="make_proxy">
+		<ant antfile="${tool.home}/cui/build.xml" target="make_proxy">
+			<property name="wsdl_url" value=""/>
+			<property name="service_name" value=""/>
+			<property name="port_name" value=""/>
+			<property name="application_name" value=""/>
+			<property name="proxy_lib" value=""/>
+			<property name="mapping_file" value=""/>
+			<property name="proxy_host" value=""/>
+			<property name="proxy_port" value=""/>
+			<property name="proxy_user" value=""/>
+			<property name="proxy_password" value=""/>
+			<property name="webservice_type" value="general"/>
+			<property name="target_package" value="default"/>
+			<property name="ns2p" value="default"/>
+			<property name="trustStore" value=""/>
+			<property name="trustStorePassword" value=""/>
+		</ant>
+	</target>
+
+	<!-- WSプロキシクラスのソースコードを生成 -->
+	<target name="make_proxy_src">
+		<ant antfile="${tool.home}/cui/build.xml" target="make_proxy_src">
+			<property name="wsdl_url" value=""/>
+			<property name="service_name" value=""/>
+			<property name="port_name" value=""/>
+			<property name="application_name" value=""/>
+			<property name="proxy_src_zip" value=""/>
+			<property name="proxy_host" value=""/>
+			<property name="proxy_port" value=""/>
+			<property name="proxy_user" value=""/>
+			<property name="proxy_password" value=""/>
+			<property name="webservice_type" value="general"/>
+			<property name="target_package" value="default"/>
+			<property name="ns2p" value="default"/>
+			<property name="trustStore" value=""/>
+			<property name="trustStorePassword" value=""/>
+		</ant>
+	</target>
+
+</project>

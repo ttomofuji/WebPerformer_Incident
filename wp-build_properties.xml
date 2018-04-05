@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="Windows-31J"?>
+<project>
+	<!-- プラグイン・ツールのインストールディレクトリ（必須） -->
+	<property name="tool.home" value="C:/eclipse/plugins/jp.co.canon_soft.wp.generator.ui_2.1.1"/>
+</project>

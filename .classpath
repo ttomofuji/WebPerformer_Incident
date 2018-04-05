@@ -1,0 +1,6 @@
+<classpath>
+<classpathentry kind="src" output="work/@COMMON/classes" path="src/JavaWebApp/@COMMON/WEB-INF/src"/>
+<classpathentry kind="output" path="work/classes"/>
+<classpathentry kind="src" output="work/@BATCH/classes" path="src/JavaWebApp/@BATCH/src"/>
+<classpathentry kind="output" path="work/classes"/>
+</classpath>

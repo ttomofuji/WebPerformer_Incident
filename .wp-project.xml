@@ -1,0 +1,9 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <ProjectProperties>
+    <tool-version>2.1.1.0</tool-version>
+    <eeLibPath>%J2EE_HOME%\lib\javaee.jar</eeLibPath>
+    <extDirPath>%project%/src</extDirPath>
+    <targetDirPath>%CATALINA_HOME%\webapps</targetDirPath>
+    <targetPkgName>wpapp</targetPkgName>
+    <themeDirPath>%plugin%/theme</themeDirPath>
+  </ProjectProperties>
