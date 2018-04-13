@@ -8,7 +8,7 @@
     <creator>eclipse</creator>
     <create-time>2018-04-13 19:02:04.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2018-04-13 19:03:03.0</update-time>
+    <update-time>2018-04-13 20:33:49.0</update-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
@@ -23,13 +23,15 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <next-io-code>IO_SCREEN_STATUS_REPORT</next-io-code>
+        <next-io-code>IO_STATUS_GRAPH</next-io-code>
         <order>10</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:03:03.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2018-04-13 20:11:50.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
