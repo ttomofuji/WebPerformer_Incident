@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow
+ version="1.0" labelActionId="false" labelActionName="true" labelCondition="false" labelParameter="false" labelRole="false" font="メイリオ" name="STATUS SCREEN">
+  <page id="IO002_INCIDENT_LST" name="IO002_インシデント検索・参照" virtual="false" hasBack="true" saveToFile="true" isWorkflow="false" ioType="IO" x="469" y="348" width="323" height="64">
+    <connection actionId="A_DETAIL" actionName="詳細" parameter="T001_INCIDENT_ID" next="t001_incident_DETAIL" connectionRouter="0" bendpoints="" readOnly="false" noHistory="false"/>
+  </page>
+  <page id="IO_SCREEN_CLOSE_LIST" name="完了一覧" virtual="false" hasBack="true" roleMenu="*:SCREENTYPE_STATUS_MENU" saveToFile="true" isWorkflow="false" ioType="IO" x="828" y="624" width="269" height="64">
+  </page>
+  <page id="IO_SCREEN_OPEN_LIST" name="未完了一覧" virtual="false" hasBack="true" roleMenu="*:SCREENTYPE_STATUS_MENU" saveToFile="true" isWorkflow="false" ioType="IO" x="828" y="540" width="269" height="64">
+  </page>
+  <page id="IO_SCREEN_STATUS_REPORT" name="概要状況画面" virtual="false" hasBack="true" saveToFile="true" isWorkflow="false" ioType="MATRIX" x="828" y="456" width="269" height="64">
+  </page>
+  <page id="M001_SYSTEM_LST" name="M001_システムマスタ一覧" virtual="false" hasBack="true" saveToFile="true" isWorkflow="false" ioType="IO" x="30" y="465" width="277" height="64">
+    <connection actionId="A_SEL" actionName="詳細" parameter="T004_SYSTEM_ID" next="M002_SYSTEM_DTL" connectionRouter="0" bendpoints="" readOnly="false" noHistory="false"/>
+  </page>
+  <page id="M002_SYSTEM_DTL" name="M002_システムマスタ詳細" virtual="false" hasBack="true" saveToFile="true" isWorkflow="false" ioType="IO" x="30" y="579" width="277" height="64">
+  </page>
+  <page id="t001_incident" name="t001_incident" virtual="false" hasBack="true" saveToFile="true" isWorkflow="false" ioType="IO" x="288" y="52" width="164" height="64">
+    <connection actionId="A" actionName="詳細" parameter="T001_INCIDENT_ID" next="t001_incident_DETAIL" connectionRouter="0" bendpoints="" readOnly="false" noHistory="false"/>
+    <connection actionId="ADD_A" actionName="新規追加" next="t001_incident_DETAIL" connectionRouter="0" bendpoints="" readOnly="false" noHistory="false"/>
+    <connection actionId="EXPORT_A" actionName="エクスポート" next="t001_incident_EXP" connectionRouter="0" bendpoints="" readOnly="false" noHistory="false"/>
+    <connection actionId="IMPORT_A_@IMPORT" actionName="インポート(@IMPORT)" parameter=" F" next="t001_incident_IMP" connectionRouter="0" bendpoints="" readOnly="true" noHistory="false"/>
+  </page>
+  <page id="t001_incident_DETAIL" name="t001_incident" virtual="false" hasBack="true" saveToFile="true" isWorkflow="false" ioType="IO" x="528" y="228" width="206" height="64">
+  </page>
+  <page id="t001_incident_EXP" name="t001_incident" virtual="false" hasBack="false" saveToFile="true" isWorkflow="false" ioType="EXPORT" x="288" y="228" width="180" height="64">
+  </page>
+  <page id="t001_incident_IMP" name="t001_incident" virtual="false" hasBack="false" saveToFile="true" isWorkflow="false" ioType="IMPORT" x="36" y="228" width="178" height="64">
+  </page>
+</pageflow>

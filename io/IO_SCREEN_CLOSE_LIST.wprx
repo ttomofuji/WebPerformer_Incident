@@ -1,20 +1,20 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <io>
     <tool-version>2.1.1.0</tool-version>
-    <code>IO_SCREEN_OPEN_LIST</code>
-    <name>T001_未完了一覧</name>
+    <code>IO_SCREEN_CLOSE_LIST</code>
+    <name>T001_完了一覧</name>
     <io-type>IO</io-type>
     <dm-code>t001_incident</dm-code>
-    <condition>T001_TEMP_STATUS	 EQ '取止め'</condition>
+    <condition>T001_TEMP_STATUS	 EQ '終了'</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
-    <create-time>2018-04-02 17:04:33.0</create-time>
+    <create-time>2018-04-13 17:39:39.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2018-04-13 19:08:42.0</update-time>
+    <update-time>2018-04-13 19:08:32.0</update-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
-        <io-code>IO_SCREEN_OPEN_LIST</io-code>
+        <io-code>IO_SCREEN_CLOSE_LIST</io-code>
         <code>GROUP</code>
         <name>GROUP</name>
         <is-visible>true</is-visible>
@@ -30,13 +30,13 @@
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2018-04-02 22:01:13.0</create-time>
+        <create-time>2018-04-13 17:41:56.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>IO_SCREEN_OPEN_LIST</io-code>
+        <io-code>IO_SCREEN_CLOSE_LIST</io-code>
         <code>T001_INCIDENT_ID</code>
         <name>管理番号</name>
         <is-visible>true</is-visible>
@@ -54,15 +54,13 @@
         <dm-item-code>T001_INCIDENT_ID</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2018-04-02 22:04:13.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2018-04-02 22:05:02.0</update-time>
+        <create-time>2018-04-13 17:41:56.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>IO_SCREEN_OPEN_LIST</io-code>
+        <io-code>IO_SCREEN_CLOSE_LIST</io-code>
         <code>T001_DATE_OCCURENCE</code>
         <name>発生日</name>
         <is-visible>true</is-visible>
@@ -80,15 +78,13 @@
         <dm-item-code>T001_DATE_OCCURENCE</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2018-04-02 22:04:13.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2018-04-02 22:05:02.0</update-time>
+        <create-time>2018-04-13 17:41:56.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>IO_SCREEN_OPEN_LIST</io-code>
+        <io-code>IO_SCREEN_CLOSE_LIST</io-code>
         <code>T001_IMPACT_BUSINESS</code>
         <name>業務影響度</name>
         <is-visible>true</is-visible>
@@ -106,12 +102,10 @@
         <dm-item-code>T001_IMPACT_BUSINESS</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2018-04-02 22:04:13.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2018-04-02 22:05:38.0</update-time>
+        <create-time>2018-04-13 17:41:56.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>IO_SCREEN_OPEN_LIST</io-code>
+            <io-code>IO_SCREEN_CLOSE_LIST</io-code>
             <io-item-code>T001_IMPACT_BUSINESS</io-item-code>
             <key>fieldWidth</key>
             <value>132px</value>
@@ -122,7 +116,7 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>IO_SCREEN_OPEN_LIST</io-code>
+        <io-code>IO_SCREEN_CLOSE_LIST</io-code>
         <code>T001_SYSTEM_NM</code>
         <name>システム名</name>
         <is-visible>true</is-visible>
@@ -140,15 +134,13 @@
         <dm-item-code>T001_SYSTEM_NM</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2018-04-02 22:04:13.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2018-04-02 22:05:02.0</update-time>
+        <create-time>2018-04-13 17:41:56.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>IO_SCREEN_OPEN_LIST</io-code>
+        <io-code>IO_SCREEN_CLOSE_LIST</io-code>
         <code>T001_BUSSINESS_CATEGORY</code>
         <name>業務分類</name>
         <is-visible>true</is-visible>
@@ -166,15 +158,13 @@
         <dm-item-code>T001_BUSSINESS_CATEGORY</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2018-04-02 22:04:13.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2018-04-02 22:05:02.0</update-time>
+        <create-time>2018-04-13 17:41:56.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>IO_SCREEN_OPEN_LIST</io-code>
+        <io-code>IO_SCREEN_CLOSE_LIST</io-code>
         <code>T001_OWNER_GRP</code>
         <name>主管部署</name>
         <is-visible>true</is-visible>
@@ -192,15 +182,13 @@
         <dm-item-code>T001_OWNER_GRP</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2018-04-02 22:04:13.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2018-04-02 22:05:02.0</update-time>
+        <create-time>2018-04-13 17:41:56.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>IO_SCREEN_OPEN_LIST</io-code>
+        <io-code>IO_SCREEN_CLOSE_LIST</io-code>
         <code>T001_TEMP_STATUS</code>
         <name>暫定対応ステータス</name>
         <is-visible>false</is-visible>
@@ -218,13 +206,13 @@
         <dm-item-code>T001_TEMP_STATUS</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2018-04-05 18:04:43.0</create-time>
+        <create-time>2018-04-13 17:41:56.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>IO_SCREEN_OPEN_LIST</io-code>
+        <io-code>IO_SCREEN_CLOSE_LIST</io-code>
         <code>A_Back</code>
         <name>戻る</name>
         <is-visible>true</is-visible>
@@ -241,9 +229,7 @@
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2018-04-05 17:59:06.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2018-04-05 17:59:37.0</update-time>
+        <create-time>2018-04-13 17:41:56.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -251,11 +237,11 @@
     </io-item-list>
     <io-prop-list/>
     <sec-io>
-      <io-code>IO_SCREEN_OPEN_LIST</io-code>
+      <io-code>IO_SCREEN_CLOSE_LIST</io-code>
       <is-disable>false</is-disable>
     </sec-io>
     <sec-menu>
-      <io-code>IO_SCREEN_OPEN_LIST</io-code>
+      <io-code>IO_SCREEN_CLOSE_LIST</io-code>
       <role-menu>*:SCREENTYPE_STATUS_MENU</role-menu>
       <is-disable>false</is-disable>
       <creator>eclipse</creator>

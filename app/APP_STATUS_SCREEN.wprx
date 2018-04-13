@@ -8,8 +8,20 @@
     <creator>eclipse</creator>
     <create-time>2018-04-02 22:06:50.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2018-04-04 13:29:03.0</update-time>
+    <update-time>2018-04-13 19:06:14.0</update-time>
     <app-io-list>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>IO002_INCIDENT_LST</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-04 13:07:08.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>IO_SCREEN_CLOSE_LIST</io-code>
+        <is-disable>false</is-disable>
+      </app-io>
       <app-io>
         <app-code>APP_STATUS_SCREEN</app-code>
         <io-code>IO_SCREEN_OPEN_LIST</io-code>
@@ -19,24 +31,10 @@
       </app-io>
       <app-io>
         <app-code>APP_STATUS_SCREEN</app-code>
-        <io-code>t001_incident</io-code>
+        <io-code>IO_SCREEN_STATUS_REPORT</io-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2018-04-02 23:26:08.0</create-time>
-      </app-io>
-      <app-io>
-        <app-code>APP_STATUS_SCREEN</app-code>
-        <io-code>t001_incident_DETAIL</io-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2018-04-02 23:26:08.0</create-time>
-      </app-io>
-      <app-io>
-        <app-code>APP_STATUS_SCREEN</app-code>
-        <io-code>IO002_INCIDENT_LST</io-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2018-04-04 13:07:08.0</create-time>
+        <create-time>2018-04-13 16:47:23.0</create-time>
       </app-io>
       <app-io>
         <app-code>APP_STATUS_SCREEN</app-code>
@@ -54,6 +52,20 @@
       </app-io>
       <app-io>
         <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>t001_incident</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-02 23:26:08.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>t001_incident_DETAIL</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-02 23:26:08.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
         <io-code>t001_incident_EXP</io-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
@@ -65,6 +77,15 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2018-04-04 13:29:03.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>APP_STATUS_SCREEN</app-code>
+        <io-code>SCREENTYPE_STATUS_MENU</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2018-04-13 19:06:12.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2018-04-13 19:06:14.0</update-time>
       </app-io>
     </app-io-list>
   </app>

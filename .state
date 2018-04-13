@@ -13,6 +13,8 @@ GenerateDocDialog.settings=
 
 application=APP_STATUS_SCREEN
 
+Editor.theme=S-ShadedLake
+
 env-app=
 
 GenerateDocDialog.frame-mode=true
