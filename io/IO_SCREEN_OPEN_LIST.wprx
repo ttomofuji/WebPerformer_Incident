@@ -10,7 +10,7 @@
     <creator>eclipse</creator>
     <create-time>2018-04-02 17:04:33.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2018-04-13 19:08:42.0</update-time>
+    <update-time>2018-04-17 14:15:32.0</update-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
@@ -213,12 +213,15 @@
         <max-ByteSize>0</max-ByteSize>
         <order>80</order>
         <level>1</level>
-        <sort-key>0</sort-key>
+        <sort-key>1</sort-key>
+        <sort-type>A</sort-type>
         <dm-code>t001_incident</dm-code>
         <dm-item-code>T001_TEMP_STATUS</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2018-04-05 18:04:43.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2018-04-17 14:15:32.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>

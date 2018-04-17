@@ -10,7 +10,7 @@
     <creator>eclipse</creator>
     <create-time>2018-04-13 19:48:54.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2018-04-13 20:36:35.0</update-time>
+    <update-time>2018-04-17 14:14:52.0</update-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
@@ -32,7 +32,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:52:49.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-14 22:17:01.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -58,7 +58,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:48:54.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-17 14:14:52.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -84,7 +84,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:48:54.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-17 14:14:52.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -110,7 +110,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:48:54.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-17 14:14:52.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -136,7 +136,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:48:54.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-17 14:14:52.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -162,7 +162,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:48:54.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-17 14:07:58.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -188,7 +188,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:48:54.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-17 14:07:58.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -214,7 +214,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:48:54.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-17 14:07:58.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -240,7 +240,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:48:54.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-17 14:07:58.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -266,7 +266,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:48:54.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-17 14:07:58.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -292,7 +292,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:48:54.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-17 14:11:12.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -301,7 +301,7 @@
         <io-code>IO_STATUS_GRAPH</io-code>
         <code>COUNT</code>
         <name>発生件数</name>
-        <is-visible>true</is-visible>
+        <is-visible>false</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
         <length>0</length>
@@ -318,7 +318,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 20:08:38.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:25:17.0</update-time>
+        <update-time>2018-04-14 19:56:54.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -342,7 +342,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 19:55:38.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:36:35.0</update-time>
+        <update-time>2018-04-13 23:11:18.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO_STATUS_GRAPH</io-code>
@@ -386,6 +386,20 @@
             <value>COUNT</value>
             <is-disable>false</is-disable>
           </io-item-prop>
+          <io-item-prop>
+            <io-code>IO_STATUS_GRAPH</io-code>
+            <io-item-code>LINE_CHART</io-item-code>
+            <key>groupWidth</key>
+            <value>577</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO_STATUS_GRAPH</io-code>
+            <io-item-code>LINE_CHART</io-item-code>
+            <key>groupHeight</key>
+            <value>299</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
         </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -409,7 +423,7 @@
         <creator>eclipse</creator>
         <create-time>2018-04-13 20:15:46.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-13 20:16:23.0</update-time>
+        <update-time>2018-04-13 23:11:18.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO_STATUS_GRAPH</io-code>
@@ -451,6 +465,13 @@
             <io-item-code>PIE_CHART</io-item-code>
             <key>graphValue</key>
             <value>COUNT</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO_STATUS_GRAPH</io-code>
+            <io-item-code>PIE_CHART</io-item-code>
+            <key>blockLayout</key>
+            <value>X_AXIS</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>

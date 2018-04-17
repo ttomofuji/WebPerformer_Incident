@@ -7,7 +7,7 @@
     <creator>auto-generated</creator>
     <create-time>2018-03-15 16:57:39.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2018-03-28 14:29:32.0</update-time>
+    <update-time>2018-04-14 21:46:21.0</update-time>
     <dm-item-list>
       <dm-item>
         <dm-code>t001_incident</dm-code>
@@ -1069,9 +1069,9 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2018-04-02 23:25:50.311</create-time>
+        <create-time>2018-04-02 23:25:50.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-02 23:25:50.311</update-time>
+        <update-time>2018-04-02 23:25:50.0</update-time>
         <dm-ope-logic-list/>
       </dm-ope>
     </dm-ope-list>

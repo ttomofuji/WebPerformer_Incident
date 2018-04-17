@@ -1,0 +1,19 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <io>
+    <tool-version>2.1.1.0</tool-version>
+    <code>test</code>
+    <name>test</name>
+    <io-type>MOBILE</io-type>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2018-04-17 14:26:02.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2018-04-17 14:26:14.0</update-time>
+    <io-parts-list/>
+    <io-item-list/>
+    <io-prop-list/>
+    <sec-io>
+      <io-code>test</io-code>
+      <is-disable>false</is-disable>
+    </sec-io>
+  </io>
