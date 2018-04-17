@@ -5,13 +5,14 @@
     <name>IO002_インシデント検索・参照</name>
     <io-type>IO</io-type>
     <dm-code>t001_incident</dm-code>
-    <condition>T001_DATE_OCCURENCE EQ DATE(@1) AND
-T001_ESCALATION_GRP SW CODE(@2)</condition>
+    <condition>T001_SYSTEM_NM EQ TEXT(@1) AND
+T001_DATE_OCCURENCE EQ DATE(@2) AND
+T001_ESCALATION_GRP SW CODE(@3)</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2018-04-02 19:30:30.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2018-04-03 12:40:38.0</update-time>
+    <update-time>2018-04-05 16:13:54.0</update-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
@@ -144,28 +145,32 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <order>50</order>
         <level>1</level>
         <sort-key>0</sort-key>
-        <dm-item-code>@NUM</dm-item-code>
+        <dm-item-code>@TEXT</dm-item-code>
         <name-dicRef>D001_INCIDENT,T001_SYSTEM_NM,dmItem.name</name-dicRef>
         <choice-list>
           <fixed>:未選択</fixed>
           <dm-code>t004_system_lst</dm-code>
-          <value-dm-item-code>T004_SYSTEM_ID</value-dm-item-code>
-          <name-dm-item-code1>T004_SYSTEM_ID</name-dm-item-code1>
-          <name-dm-item-code2>T004_SYSTEM_NM_CAS</name-dm-item-code2>
-          <sort-dm-item-code1>T004_SYSTEM_ID</sort-dm-item-code1>
-          <sort-type1>A</sort-type1>
+          <value-dm-item-code>T004_SYSTEM_NM_FOR</value-dm-item-code>
+          <name-dm-item-code1>T004_SYSTEM_NM_FOR</name-dm-item-code1>
         </choice-list>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:45:13.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-03 10:24:48.0</update-time>
+        <update-time>2018-04-05 16:10:28.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>I_T001_SYSTEM_NM</io-item-code>
             <key>fieldWidth</key>
             <value>258px</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO002_INCIDENT_LST</io-code>
+            <io-item-code>I_T001_SYSTEM_NM</io-item-code>
+            <key>fieldType</key>
+            <value>LISTBOX</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -311,7 +316,7 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <next-io-param>I_T001_DATE_OCCURENCE,I_T001_ESCALATION_GRP</next-io-param>
+        <next-io-param>I_T001_SYSTEM_NM,I_T001_DATE_OCCURENCE,I_T001_ESCALATION_GRP</next-io-param>
         <order>100</order>
         <level>1</level>
         <sort-key>0</sort-key>
@@ -319,7 +324,7 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:45:13.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-02 20:51:03.0</update-time>
+        <update-time>2018-04-05 16:10:28.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
@@ -398,7 +403,7 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <next-io-code>t001_incident_DETAIL</next-io-code>
+        <next-io-code>IO001_INCIDENT_01</next-io-code>
         <order>130</order>
         <level>2</level>
         <sort-key>0</sort-key>
@@ -406,6 +411,8 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2018-04-03 11:44:24.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2018-04-05 15:36:33.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -431,8 +438,23 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:30:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-02 19:41:41.0</update-time>
-        <io-item-prop-list/>
+        <update-time>2018-04-05 15:01:12.0</update-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>IO002_INCIDENT_LST</io-code>
+            <io-item-code>T001_INCIDENT_ID</io-item-code>
+            <key>fieldWidth</key>
+            <value>200</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO002_INCIDENT_LST</io-code>
+            <io-item-code>T001_INCIDENT_ID</io-item-code>
+            <key>labelWidth</key>
+            <value>200</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -505,13 +527,20 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:30:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-03 12:40:38.0</update-time>
+        <update-time>2018-04-05 15:01:12.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_SYSTEM_NM</io-item-code>
             <key>fieldWidth</key>
-            <value>139px</value>
+            <value>200</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO002_INCIDENT_LST</io-code>
+            <io-item-code>T001_SYSTEM_NM</io-item-code>
+            <key>labelWidth</key>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -539,13 +568,27 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:30:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-03 11:54:38.0</update-time>
+        <update-time>2018-04-05 15:01:12.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_OPERATION_CATEGORY</io-item-code>
             <key>labelText</key>
             <value>運用保守&lt;BR&gt;作業分類</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO002_INCIDENT_LST</io-code>
+            <io-item-code>T001_OPERATION_CATEGORY</io-item-code>
+            <key>fieldWidth</key>
+            <value>200</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO002_INCIDENT_LST</io-code>
+            <io-item-code>T001_OPERATION_CATEGORY</io-item-code>
+            <key>labelWidth</key>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -573,7 +616,7 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:30:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-03 12:40:38.0</update-time>
+        <update-time>2018-04-05 15:01:12.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
@@ -585,15 +628,22 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_OPERATION_DTL</io-item-code>
-            <key>fieldHeight</key>
-            <value>55px</value>
+            <key>fieldWidth</key>
+            <value>400</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_OPERATION_DTL</io-item-code>
-            <key>fieldWidth</key>
-            <value>413px</value>
+            <key>nowrap</key>
+            <value>FALSE</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO002_INCIDENT_LST</io-code>
+            <io-item-code>T001_OPERATION_DTL</io-item-code>
+            <key>labelWidth</key>
+            <value>400</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -621,20 +671,20 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:30:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-03 11:37:55.0</update-time>
+        <update-time>2018-04-05 15:01:12.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_DATE_OCCURENCE</io-item-code>
             <key>fieldWidth</key>
-            <value>100px</value>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_DATE_OCCURENCE</io-item-code>
             <key>labelWidth</key>
-            <value>100px</value>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -662,20 +712,20 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:30:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-03 11:37:55.0</update-time>
+        <update-time>2018-04-05 15:01:12.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_DUEDATE_ORG</io-item-code>
             <key>fieldWidth</key>
-            <value>100px</value>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_DUEDATE_ORG</io-item-code>
             <key>labelWidth</key>
-            <value>100px</value>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -703,13 +753,13 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:30:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-03 11:37:55.0</update-time>
+        <update-time>2018-04-05 15:01:12.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_DUEDATE_CHANGE</io-item-code>
             <key>fieldWidth</key>
-            <value>100px</value>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
@@ -723,7 +773,7 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_DUEDATE_CHANGE</io-item-code>
             <key>labelWidth</key>
-            <value>100px</value>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -777,13 +827,20 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-03 10:34:16.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-03 11:59:58.0</update-time>
+        <update-time>2018-04-05 15:01:12.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>O_T001_ESCALATION_GRP</io-item-code>
             <key>fieldWidth</key>
-            <value>283px</value>
+            <value>200</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO002_INCIDENT_LST</io-code>
+            <io-item-code>O_T001_ESCALATION_GRP</io-item-code>
+            <key>labelWidth</key>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -811,7 +868,7 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:30:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-03 11:59:58.0</update-time>
+        <update-time>2018-04-05 15:01:12.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
@@ -824,7 +881,14 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_ESCALATION_NM</io-item-code>
             <key>fieldWidth</key>
-            <value>284px</value>
+            <value>200</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO002_INCIDENT_LST</io-code>
+            <io-item-code>T001_ESCALATION_NM</io-item-code>
+            <key>labelWidth</key>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -852,13 +916,13 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:30:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-03 11:59:58.0</update-time>
+        <update-time>2018-04-05 15:01:12.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_INCIDENT_STATUS</io-item-code>
             <key>fieldWidth</key>
-            <value>158px</value>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
@@ -872,7 +936,7 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_INCIDENT_STATUS</io-item-code>
             <key>labelWidth</key>
-            <value>151px</value>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -900,13 +964,27 @@ T001_ESCALATION_GRP SW CODE(@2)</condition>
         <creator>eclipse</creator>
         <create-time>2018-04-02 19:30:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2018-04-03 11:54:38.0</update-time>
+        <update-time>2018-04-05 15:01:12.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>IO002_INCIDENT_LST</io-code>
             <io-item-code>T001_DATE_UPDATE</io-item-code>
             <key>nowrap</key>
             <value>TRUE</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO002_INCIDENT_LST</io-code>
+            <io-item-code>T001_DATE_UPDATE</io-item-code>
+            <key>fieldWidth</key>
+            <value>200</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>IO002_INCIDENT_LST</io-code>
+            <io-item-code>T001_DATE_UPDATE</io-item-code>
+            <key>labelWidth</key>
+            <value>200</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
